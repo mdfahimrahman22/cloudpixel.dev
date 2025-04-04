@@ -1,0 +1,19 @@
+.slick-slider {
+  max-height: 20em !important;
+}
+
+#sidebar {
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Adjust the duration and ease */
+  transform: translateX(-100%); /* Initially positioned off-screen */
+  opacity: 0;
+}
+
+#sidebar.visible {
+  transform: translateX(0); /* Move to its original position */
+  opacity: 1; /* Fully visible */
+}
+
+#sidebar.invisible {
+  transform: translateX(-100%); /* Move off-screen */
+  opacity: 0; /* Hidden */
+}
