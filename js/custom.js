@@ -71,4 +71,9 @@ $(document).ready(function () {
   // Start initially
   showTooltip(current);
   startRotation();
+
+
+  document.getElementById('scroll-to-about').addEventListener('click', () => {
+    document.getElementById('about-section').scrollIntoView({ behavior: 'smooth' });
+  });
 });
