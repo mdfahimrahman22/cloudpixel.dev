@@ -4,6 +4,9 @@ const lenis = new Lenis({
 });
 
 $(document).ready(function () {
+  const year = new Date().getFullYear();
+  document.getElementById("copyright-year").textContent = year;
+
   $(".slick-slider").not(".slick-initialized").slick({
     dots: false, // Show navigation dots (optional)
     infinite: true, // Infinite looping of slides

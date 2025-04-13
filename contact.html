@@ -38,6 +38,9 @@
     />
 
     <link rel="stylesheet" href="./css/custom.css" />
+    <!-- Toastr CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+
   </head>
   <body
     class="__className_0aa4ae"
@@ -456,6 +459,7 @@
           </div>
           <div class="flex justify-end mt-10">
             <a
+              id="sendButton"
               class="border border-green-400 hover:text-black text-green-400 hover:bg-green-400 text-center inline-block transition-all ease-linear duration-100 md:py-[5px] py-1 md:px-[18px] px-3 text-[14px] md:text-base rounded-full aos-init"
               data-aos="fade-up"
               type="button"
@@ -619,7 +623,7 @@
         </div>
         <span
           class="block text-sm text-gray-500 text-center dark:text-gray-400 mt-3"
-          ><span class="text-green-400">© </span>2023
+          ><span class="text-green-400">© </span><span id="copyright-year"></span>
           <span class="text-green-400">BongoBrain</span> . All Rights
           Reserved.</span
         >
@@ -645,5 +649,11 @@
     <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script>
     <script src="./js/custom.js"></script>
     <script src="./js/scroll-down-btn.js"></script>
+
+    <!-- Toastr JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    
+    <script src="./js/contact.js"></script>
+
   </body>
 </html>
