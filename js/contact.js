@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
       message: message,
     };
 
-    fetch("http://localhost:8000/api/contact/", {
+    fetch("https://admin.cloudpixel.dev/api/contact/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
