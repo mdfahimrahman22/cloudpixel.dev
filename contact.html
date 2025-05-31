@@ -69,6 +69,7 @@
             height="1em"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
+            id="hamburger"
           >
             <path
               d="M2 5.99519C2 5.44556 2.44556 5 2.99519 5H11.0048C11.5544 5 12 5.44556 12 5.99519C12 6.54482 11.5544 6.99039 11.0048 6.99039H2.99519C2.44556 6.99039 2 6.54482 2 5.99519Z"
@@ -114,9 +115,10 @@
             class="fixed top-0 left-0 w-screen h-screen bg-[#1112044b] z-[1] md:hidden invisible opacity-0"
           ></div>
           <div
-            class="fixed top-0 sm:w-1/2 w-2/3 h-screen bg-[#111204] bg-opacity-50 backdrop-blur-xl flex flex-col justify-between p-10 z-[2] border-r-[1px] border-[#b8fd505e] transition-all ease-linear duration-200 md:hidden invisible -left-52 opacity-0"
+            id="sidebar" class="fixed top-0 sm:w-1/2 w-2/3 h-screen bg-[#111204] bg-opacity-50 backdrop-blur-xl flex flex-col justify-between p-10 z-[2] border-r-[1px] border-[#b8fd505e] transition-all ease-linear duration-200 md:hidden invisible left-0 opacity-100"
           >
             <svg
+              id="closeBtn"
               stroke="currentColor"
               fill="none"
               stroke-width="0"

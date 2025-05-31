@@ -19,11 +19,27 @@ $(document).ready(function () {
   });
   // When the element with the class 'hamburger' is clicked
   $("#hamburger").click(function () {
-    // Toggle the 'visible' and 'invisible' classes on the element with id 'sidebar'
     $("#sidebar").toggleClass("visible invisible");
   });
   $("#closeBtn").click(function () {
-    // Toggle the 'visible' and 'invisible' classes on the element with id 'sidebar'
     $("#sidebar").toggleClass("visible invisible");
   });
+  
+  $(document).on("click", function (e) {
+    const $sidebar = $("#sidebar");
+    const $hamburger = $("#hamburger");
+
+    // Only apply logic if sidebar is currently visible
+    if ($sidebar.hasClass("visible")) {
+      if (
+        !$sidebar.is(e.target) &&
+        $sidebar.has(e.target).length === 0 &&
+        !$hamburger.is(e.target) &&
+        $hamburger.has(e.target).length === 0
+      ) {
+        $sidebar.removeClass("visible").addClass("invisible");
+      }
+    }
+  });
+
 });
